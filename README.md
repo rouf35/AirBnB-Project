@@ -9,13 +9,11 @@
 ## Source system 
 - Airbnb is an American company operating an online marketplace for short- and long-term homestays and experiences. The company acts as a broker and charges a commission from each booking.
 - The data of Airbnb typically includes information related to listings, bookings, reviews, host profiles, guest profiles, pricing, availability calendars, and various other transactional and operational data associated with the Airbnb platform.This data helps Airbnb manage its marketplace, facilitate transactions between hosts and guests, improve user experience, and make data-driven decisions to enhance its services.
-- For detailed data profiling :
-[Click here](https://github.com/Arwa0/AirBnB-Data-Engineering-Project/tree/main/Data_Profiling)
+
 
 ## Staging Area
 - The staging area involves extracting data from CSV files and loading it into a PostgreSQL database. During this process, careful consideration is given to data types for memory optimization.
-- Attached is a photo showing the relations between tables:
-  ![Staging Layer ](https://github.com/Arwa0/AirBnB-Data-Engineering-Project/assets/74055031/8ab8cb13-9be9-4c53-a77d-dda8aad90d4b)
+
 
 ## Designing The Data Warehouse
 - appling **Dimensional modeling** to design a **galaxy-schema** model depending on our business processes
@@ -30,15 +28,12 @@
   - **(4) Identifying Facts**:
     - `Reservations Fact`: Contains data related to listing availability, price, and minimum/maximum nights for each listing on specific dates.
     - `Reviews Fact`: Stores data related to reviews for each listing, including review ID, date, reviewer details, and comments.
- - [See the Data Warehouse Design here](https://github.com/Arwa0/AirBnB-Data-Engineering-Project/tree/main/Data%20Warehouse%20Design#readme)
 
 ## ETL process:
 - This process includes extracting data from the staging layer, converting each table into a **pandas DataFrame**, performing transformations such as removing leading and trailing whitespace from columns, changing some column datatypes to match the data warehouse, adding surrogate keys, etc. Then, the data is loaded back to the data warehouse on PostgreSQL.
-- You can find the code for the ETL process in [this](https://github.com/Arwa0/AirBnB-Data-Engineering-Project/blob/main/ETL%20using%20python%20script.ipynb) jupyter notebook file
 
-## Actionable Business Insights
-- Now, you can turn business questions into actionable business insights.
-- You can find the questions, along with their queries used to answer them, and the CSV files containing these insights in [this folder](https://github.com/Arwa0/AirBnB-Data-Engineering-Project/tree/main/Actionable%20Business%20Insights)
+
+
  
       
 
